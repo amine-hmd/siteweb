@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(to right, #43cea2, #185a9d);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #004d40;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2rem;
+            transition: transform 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            color: #aed581;
+            transform: scale(1.1);
+        }
+        section {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        section h2 {
+            text-align: center;
+            color: #185a9d;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        section h2::after {
+            content: '';
+            width: 60px;
+            height: 4px;
+            background-color: #43cea2;
+            display: block;
+            margin: 10px auto 0;
+        }
+        .about-me {
+            text-align: center;
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+        .skills, .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .skills div, .projects div {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+            max-width: 300px;
+        }
+        .skills div:hover, .projects div:hover {
+            transform: translateY(-10px);
+        }
+        footer {
+            text-align: center;
+            background: linear-gradient(to right, #185a9d, #43cea2);
+            color: white;
+            padding: 20px 0;
+        }
+        footer p {
+            margin: 0;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+            nav a {
+                margin: 0 10px;
+                font-size: 1rem;
+            }
+            .skills div, .projects div {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Name</h1>
+        <p>Web Developer | Designer | Creator</p>
+    </header>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="about">
+        <h2>About Me</h2>
+        <p class="about-me">Hello! I'm a passionate web developer with a knack for creating visually appealing and user-friendly websites. I enjoy solving complex problems and continuously improving my skills.</p>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div>
+                <h3>HTML & CSS</h3>
+                <p>Building responsive and modern web layouts.</p>
+            </div>
+            <div>
+                <h3>JavaScript</h3>
+                <p>Creating dynamic and interactive web experiences.</p>
+            </div>
+            <div>
+                <h3>React</h3>
+                <p>Developing single-page applications with React.</p>
+            </div>
+            <div>
+                <h3>Node.js</h3>
+                <p>Building efficient server-side applications.</p>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div>
+                <h3>Portfolio Website</h3>
+                <p>A showcase of my work and skills.</p>
+            </div>
+            <div>
+                <h3>E-commerce App</h3>
+                <p>An online platform for buying and selling products.</p>
+            </div>
+            <div>
+                <h3>Blog Platform</h3>
+                <p>A content management system for bloggers.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>If you'd like to work with me or have any questions, feel free to reach out!</p>
+        <p>Email: yourname@example.com</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
